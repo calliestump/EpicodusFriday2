@@ -1,36 +1,75 @@
+/*let result = ""
+
+var answer1;
+function sAnswer1(){
+  answer1 = document.getElementById('favDog').value;
+  alert(month);
+}
+var answer2;
+function sAnswer2(){
+  answer2 = document.getElementById('favMovie').value;
+  alert(month);
+}
+var answer3;
+function sAnswer3(){
+  answer3 = document.getElementById('favMusic').value;
+  alert(month);
+}
+var answer4;
+function sAnswer4(){
+  answer4 = document.getElementById('favSeason').value;
+  alert(month);
+}
+var answer5;
+function Answer5(){
+  answer5 = document.getElementById('favRel').value;
+  alert(month);
+}
+*/
+let cPlus = 0
+function cPlus2() {
+  cPlus++;
+}
+
+let ruby = 0
+function ruby2() {
+  ruby++;
+}
+let python = 0
+function python2() {
+  python++;
+}
 $(document).ready(function() {
-  let cPlus = 0
-  let ruby = 0
-  let python = 0
-  let result = ""
   $("form#Dog").submit(function(event) {
-    const questionOne = parseInt($("#favDog").val());
-    // const operator1 = $("#favDog").val();
-    if (questionOne === 1) {
-      cPlus += 1
-      print(cPlus)
+    const favDog = document.getElementById("favDog");
+    var value1 = favDog.value;
+    if (value1 === "1") {
+      cPlus++;
+    }
+    else if (value1 === "2") {
+      ruby++;
     }
     event.preventDefault();
   });
   $("form#Movie").submit(function(event) {
-    const questionTwo = parseInt($("#favMovie").val());
-    //const operator2 = $("#favMovie").val();
+    const favMovie = document.getElementById("favMovie");
+    var value2 = favMovie.value;
     event.preventDefault();
   });
   $("form#Music").submit(function(event) {
-    const questionThree = parseInt($("#favMusic").val());
-    //const operator3 = $("#favMusic").val();
+    const favMusic = document.getElementById("favMusic");
+    var value3 = favMusic.value;
     event.preventDefault();
   });
   $("form#Season").submit(function(event) {
-    const questionFour = parseInt($("#favSeason").val());
-    //const operator4 = $("#favSeason").val();
+    const favSeason = document.getElementById("favSeason");
+    var value4 = favSeason.value;
     event.preventDefault();
   });
   $("form#Relax").submit(function(event) {
-    const questionFive = parseInt($("#favRel").val());
-    //const operator5 = $("#favRel").val();
+    const favRel = document.getElementById("favRel");
+    var value5 = favRelax.value;
     event.preventDefault();
   });
-  show(cPlus)
 });
+//console.log(cPlus);
