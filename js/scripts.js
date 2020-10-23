@@ -14,10 +14,10 @@ function python2() {
   python++;
 }
 */
-
-$(document).ready(function() {
+//let cplus = 0;
+let cplus = 0;
+$(document).ready(function() {  
   $("form#generator").submit(function(event) {
-    let cplus = 0;
     const favDog = parseInt($("#favDog").val());
     const favMovie = parseInt($("#favMovie").val());
     const favMusic = parseInt($("#favMusic").val());
@@ -64,6 +64,6 @@ $(document).ready(function() {
     } 
 
     // Compare CPlus Python and Ruby to see what language suits best for user
-    
+
   });
 });
