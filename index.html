@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <link href="css/bootstrap" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
@@ -16,15 +16,17 @@
     </div>
   </div>
   <div class="container">    
-    <form id="generator">
+    <form id="Dog">
       <div class="form-group">
         <label for="favDog">What is your favorite dog out of these?</label>
         <select id="favDog" class="form-control">
-          <option>Husky</option>
-          <option>Rottweiler</option>
-          <option>Doberman</option> 
+          <option value="1">Husky</option>
+          <option value="2">Rottweiler</option>
+          <option valie="3">Doberman</option> 
         </select>
       </div>
+    </form> 
+    <form id="Movie">
       <div class="form-group">
         <label for="favMovie">What is your favorite movie genre?</label>
         <select id="favMovie" class="form-control">
@@ -33,6 +35,8 @@
           <option value="3">Comedy</option>
         </select>
       </div>
+    </form> 
+    <form id="Music"></form>  
       <div class="form-group">
         <label for="favMusic">What is your favorite music genre?</label>
         <select id="favMusic" class="form-control">
@@ -41,15 +45,18 @@
           <option value="3">R&B</option>
         </select>
       </div>
+    </form>  
+    <form id="Season">
       <div class="form-group">
         <label for="favSeason">What is your favorite season?</label>
         <select id="favSeason" class="form-control">
           <option value="1">Summer</option>
           <option value="2">Fall</option>
-          <option value="3">Winter</option>
-          <option value="4">Spring</option> 
+          <option value="3">Winter</option> 
         </select>
       </div>
+    </form>  
+    <form id="Relax">
       <div class="form-group">
         <label for="favRel">What is your idea of relaxing?</label>
         <select id="favRel" class="form-control">
@@ -58,6 +65,7 @@
           <option value="3">Sleeping</option>
         </select>
     </form>
+    <button type="submit" class="btn">See what language suits me!</button>
   </div>
 
 
