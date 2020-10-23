@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     // Question 1 Determination
     if (favDog === 1) {
-        cplus += 1;
+        cplus += 1; // I could not update the global cplus variable by one. Could not proceed
     } else if (favDog === 2) {
         ruby += 1;
     } else if (favDog === 3) {
