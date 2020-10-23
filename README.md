@@ -4,13 +4,13 @@
 
 ### By _Callie Stump_
 
-##### Link to GitPages
+##### Link to GitPages (need clarification)
 ---
 ## **Description**
 This webpage uses an implementation of JavaScript in order to create a language generator. The language generator surveys the user to see what programming language suits them the best.
 
 ## **Setup**
-1. Copy this repository link:
+1. Copy this repository link: https://github.com/calliestump/inProject
 2. Open bash and go to the directory where you'd like to store the clone.
 3. Clone the repository
 ```
