@@ -40,35 +40,9 @@ function python2() {
   python++;
 }
 $(document).ready(function() {
-  $("form#Dog").submit(function(event) {
+  $("form#generator").submit(function(event) {
     const favDog = document.getElementById("favDog");
     var value1 = favDog.value;
-    if (value1 === "1") {
-      cPlus++;
-    }
-    else if (value1 === "2") {
-      ruby++;
-    }
-    event.preventDefault();
-  });
-  $("form#Movie").submit(function(event) {
-    const favMovie = document.getElementById("favMovie");
-    var value2 = favMovie.value;
-    event.preventDefault();
-  });
-  $("form#Music").submit(function(event) {
-    const favMusic = document.getElementById("favMusic");
-    var value3 = favMusic.value;
-    event.preventDefault();
-  });
-  $("form#Season").submit(function(event) {
-    const favSeason = document.getElementById("favSeason");
-    var value4 = favSeason.value;
-    event.preventDefault();
-  });
-  $("form#Relax").submit(function(event) {
-    const favRel = document.getElementById("favRel");
-    var value5 = favRelax.value;
     event.preventDefault();
   });
 });
