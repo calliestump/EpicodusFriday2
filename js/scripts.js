@@ -1,69 +1,65 @@
-/*let result = ""
-
-let cPlus = 0
-function cPlus2() {
-  cPlus++;
-}
-
-let ruby = 0
-function ruby2() {
-  ruby++;
-}
-let python = 0
-function python2() {
-  python++;
-}
-*/
-//let cplus = 0;
-let cplus = 0;
 $(document).ready(function() {  
   $("form#generator").submit(function(event) {
-    const favDog = parseInt($("#favDog").val());
-    const favMovie = parseInt($("#favMovie").val());
-    const favMusic = parseInt($("#favMusic").val());
-    const favSeason = parseInt($("#favSeason").val());
-    const favRel = parseInt($("#favRel").val());
-    //let cplus = 0;
-    //event.preventDefault();
-
-    // Question 1 Determination
-    if (favDog === 1) {
-        cplus += 1; // I could not update the global cplus variable by one. Could not proceed
-    } else if (favDog === 2) {
+    event.preventDefault();
+    const favSubject = $("#favSubject :selected").val();
+    const favMajor = $("#favMajor :selected").val();
+    const favMusic = $("#favMusic :selected").val();
+    const favGame = $("#favGame :selected").val();
+    const favDance = $("#favDance :selected").val();
+    let cplus = 0;
+    let ruby = 0;
+    let python = 0;
+    if (favSubject == 1) {
+      cplus += 1; 
+    } else if (favSubject == 2) {
         ruby += 1;
-    } else if (favDog === 3) {
+    } else if (favSubject == 3) {
         python +=1;
-    } // Question 2 Determination
-    if (favMovie === 1) {
+    } else {
+      alert("Error: no user input")
+    }
+    if (favMajor == 1) {
       cplus += 1;
-    } else if (favMovie === 2) {
+    } else if (favMajor == 2) {
       ruby += 1;
-    } else if (favMovie === 3) {
+    } else if (favMajor == 3) {
       python +=1;
-    } // Question 3 Determination
-    if (favMusic === 1) {
+    } else {
+      alert("Error: No user input")
+    }
+    if (favMusic == 1) {
       cplus += 1;
-    } else if (favMusic === 2) {
+    } else if (favMusic == 2) {
       ruby += 1;
-    } else if (favMusic === 3) {
+    } else if (favMusic == 3) {
       python +=1;
-    } // Question 4 Determination
-    if (favSeason === 1) {
+    } else {
+      alert("Error: no user input")
+    }
+    if (favGame == 1) {
       cplus += 1;
-    } else if (favSeason === 2) {
+    } else if (favGame == 2) {
       ruby += 1;
-    } else if (favSeason === 3) {
+    } else if (favGame == 3) {
       python +=1;
-    } // Question 5 Determination
-    if (favRel === 1) {
+    } else {
+      alert("Error: no user input")
+    }
+    if (favDance == 1) {
       cplus += 1;
-    } else if (favRel === 2) {
+    } else if (favDance == 2) {
       ruby += 1;
-    } else if (favRel === 3) {
-      python +=1;
+    } else if (favDance == 3) {
+      python +=1; 
+    } else {
+      alert("Error: no user input")
+    }
+    if (cplus > ruby && cplus > python) {
+      result = ("C+");
+    } else if (ruby > python && ruby > cplus) {
+    } else if (python > ruby && python > cplus) {
+      result = ("Python");
     } 
-
-    // Compare CPlus Python and Ruby to see what language suits best for user
-
+    alert(result)
   });
 });
