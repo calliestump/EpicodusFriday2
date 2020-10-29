@@ -3,8 +3,6 @@
 #### **Epicodus; 10.23.2020**
 
 ### By _Callie Stump_
-
-##### Link to GitPages (need clarification)
 ---
 ## **Description**
 This webpage uses an implementation of JavaScript in order to create a language generator. The language generator surveys the user to see what programming language suits them the best.
