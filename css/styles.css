@@ -1,12 +1,16 @@
 .jumbotron {
   background-color: blanchedalmond;
-  border:5px solid black
+  border:5px solid black;
 }
 
 .spacing{
-  padding: 30px
+  padding: 30px;
 }
 
 h1 {
+  text-align: center;
+}
+
+.answer {
   text-align: center;
 }

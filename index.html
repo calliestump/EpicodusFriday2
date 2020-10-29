@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <link href="css/bootstrap.css" dance="stylesheet" type="text/css" media="all">
-  <link href="css/styles.css" dance="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
   <title>Language Generator</title>
@@ -15,12 +15,12 @@
       </div>
     </div>
   </div>
+
   <div class="container">    
     <form id="generator">
       <div class="form-group">
         <label for="favSubject">What is your favorite school subject?</label>
         <select id="favSubject" class="form-control">
-          <option value="0">None</option>
           <option value="1">History</option>
           <option value="2">Math</option>
           <option value="3">Art</option> 
@@ -28,7 +28,6 @@
   
         <label for="favMajor">Which one of these majors would you pursue?</label>
         <select id="favMajor" class="form-control">
-          <option value="0">None</option>
           <option value="1">Engineer</option>
           <option value="2">Business</option>
           <option value="3">Artist</option>
@@ -36,7 +35,6 @@
 
         <label for="favMusic">If you could, what musical instrument would you play?</label>
         <select id="favMusic" class="form-control">
-          <option value="0">None</option>
           <option value="1">Saxophone</option>
           <option value="2">Piano</option>
           <option value="3">Violin</option>
@@ -44,7 +42,6 @@
 
         <label for="favGame">What card game would you want to learn/play?</label>
         <select id="favGame" class="form-control">
-          <option value="0">None</option>
           <option value="1">Blackjack</option>
           <option value="2">Hearts</option>
           <option value="3">Poker</option> 
@@ -52,14 +49,21 @@
 
         <label for="favDance">What kind of music would you prefer to dance to?</label>
         <select id="favDance" class="form-control">
-          <option value="0">None</option>
           <option value="1">Instrumental</option>
           <option value="2">Hip-Hop</option>
           <option value="3">EDM</option>
         </select>
       </div>  
       <br>
-      <button class="btn btn-secondary" type="submit">See what language suits me!</button>
+      <h2>Generated Language:
+        <span class= "final"></span>
+      </h2>
+      <br>
+      <div class= "buttons">
+        <button class="btn btn-secondary" id="submitButton">See what language suits me!</button>
+        <button type="submit" onCLick="refreshPage()" class="btn btn-danger">Reset Survey</button>
+      </div>
+      <br>
     </form>
   </div>
 </body>
