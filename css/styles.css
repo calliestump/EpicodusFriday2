@@ -1,3 +1,6 @@
+#finalResult {
+  display: none;
+}
 .jumbotron {
   background-color: blanchedalmond;
   border:5px solid black;

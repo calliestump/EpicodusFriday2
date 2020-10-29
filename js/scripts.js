@@ -52,8 +52,9 @@ $(document).ready(function() {
     } else if (python > ruby && python > cplus) {
         result = ("Python");
     }
-  $(".final").append(result)
+    $(".final").append(result)
   });
   $("#submitButton").click(function() {
+    $("#finalResult").show();  
   });  
 });
