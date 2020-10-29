@@ -20,7 +20,7 @@ $ cd Desktop
 $ cd [known directory]
 $ code .
 ```
-#### You CAN'T forget that in order to push any changes you need to add your own repository.
+#### You can't forget that in order to push any changes you need to add your own repository.
 ```
 git remote origin [repo. link]
 ```
@@ -29,7 +29,7 @@ git remote origin [repo. link]
 * JavaScript
 * JQuery
 * CSS
-* Bootstrao
+* Bootstrap
 * GIT
 * GitHub
 
